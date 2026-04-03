@@ -21,7 +21,7 @@ Validation Set: Used to tune hyperparameters
 Test Set: Used for final evaluation
 
 # Methodology
-## Step 1: Data Acquisition
+### Step 1: Data Acquisition
 
 The dataset consisting of 5,863 chest X-ray images was obtained and organized into three subsets:
 
