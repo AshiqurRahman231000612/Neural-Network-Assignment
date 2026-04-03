@@ -107,11 +107,14 @@ Understand how the model makes predictions.
 
 # Findings
 Test Accuracy: 80.77%
+
 Training Performance: During the 15th epoch, the model reached a training accuracy of ~95.65%, though validation accuracy fluctuated, suggesting a need for further hyperparameter tuning to stabilize the learning process.
 
 # Observations
 The model performs well in distinguishing between Pneumonia and Normal cases.
+
 Slight overfitting may occur due to dataset imbalance.
+
 Transfer learning significantly improved performance compared to a basic CNN.
 
 # Model Interpretability (Grad-CAM)
@@ -120,9 +123,12 @@ Grad-CAM was used to visualize which regions of the X-ray influenced the model's
 
 Key Insight:
 The model focuses on lung regions where abnormalities are present.
+
 This improves transparency and trust in predictions.
 
 # Limitations
 Dataset is imbalanced.
+
 Model may misclassify borderline cases.
+
 Not suitable for real clinical diagnosis without validation.
