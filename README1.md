@@ -1,7 +1,7 @@
 # Overview
 The goal of this CNN model is to assist in medical image analysis by automatically identifying patterns in X-ray scans that indicate if a person has pneumonia or not.
 
-#Dataset
+##Dataset
 The dataset consists of 5,863 chest X-ray images collected from pediatric patients (ages 1–5 years).
 
 #Structure
