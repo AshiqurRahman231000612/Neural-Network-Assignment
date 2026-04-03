@@ -31,7 +31,7 @@ Test set
 
 Each subset contains two classes: NORMAL and PNEUMONIA.
 
-Step 2: Data Preprocessing
+### Step 2: Data Preprocessing
 All images were resized to 150 × 150 pixels to maintain consistency
 Pixel values were normalized to the range [0, 1]
 
@@ -42,7 +42,7 @@ Horizontal flipping
 
 This step helps improve model generalization and reduces overfitting.
 
-Step 3: Data Loading
+### Step 3: Data Loading
 
 The dataset was loaded using image data generators, which:
 
@@ -50,14 +50,14 @@ Read images directly from directories
 Automatically assign labels based on folder names
 Feed images to the model in batches
 
-Step 4: Model Selection (Transfer Learning)
+### Step 4: Model Selection (Transfer Learning)
 
 A pretrained MobileNetV2 model was selected as the base model:
 
 Pretrained on the ImageNet dataset
 Convolutional layers were initially frozen to retain learned features
 
-Step 5: Model Customization
+### Step 5: Model Customization
 
 Custom layers were added on top of the base model:
 
@@ -66,7 +66,7 @@ Fully connected Dense layer (ReLU activation)
 Dropout layer (0.5) to reduce overfitting
 Output layer with Sigmoid activation for binary classification
 
-Step 6: Model Compilation
+### Step 6: Model Compilation
 
 The model was compiled with:
 
@@ -74,13 +74,13 @@ Optimizer: Adam
 Loss Function: Binary Crossentropy
 Evaluation Metric: Accuracy
 
-Step 7: Model Training
+### Step 7: Model Training
 The model was trained using the training dataset
 Validation data was used to monitor performance
 Early stopping was applied to prevent overfitting
 The best-performing model was saved using checkpointing
 
-Step 8: Fine-Tuning
+### Step 8: Fine-Tuning
 
 After initial training:
 
@@ -89,7 +89,7 @@ The model was retrained with a lower learning rate
 
 This step improves feature learning and boosts accuracy.
 
-Step 9: Model Evaluation
+### Step 9: Model Evaluation
 
 The trained model was evaluated on the test dataset using:
 
@@ -98,7 +98,7 @@ Loss
 Confusion Matrix
 Precision, Recall, and F1-score
 
-Step 10: Model Interpretation
+### Step 10: Model Interpretation
 
 Grad-CAM was applied to:
 
